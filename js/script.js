@@ -9,7 +9,7 @@ window.onload = function () {
         },
         pagination: {
             el: '.swiper-visual-pg',
-            type: 'fraction',
+            type: 'progressbar',
             clickable: true,
         },
         navigation: {
