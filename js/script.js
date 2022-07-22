@@ -42,4 +42,9 @@ window.onload = function () {
             nextEl: '.sw-visual-next'
         },
     });
+
+    new Swiper('.sw-more', {
+        loop: true,
+		slidesPerView: 3,
+    });
 }
