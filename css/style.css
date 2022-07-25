@@ -209,6 +209,165 @@ body {
   width: 100%;
   visibility: visible;
 }
+
+/* 모바일 */
+.mobile-header{
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 100%;
+  border: 0;
+  background-color: transparent;
+}
+
+
+.mobile-header::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 25PX;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  transition: background-color 0.3s;
+  transition: all 0.3s;
+}
+
+.header-line{
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  transition: background-color .3s;
+}
+
+.mobile-header::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  transition: background-color 0.3s;
+  transition: all 0.3s;
+}
+
+.headeropen::before {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.headeropen .header-line {
+  width: 0;
+}
+
+.headeropen::after {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+/* 헤더 반응형 1025px 일때 */
+@media all and (max-width:1025px){
+  .header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 70px;
+    padding: 0 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+  
+    transition: height .3s, background-color .3s;
+  
+    z-index: 9;
+  }
+  
+  .header-open {
+    height: 70px;
+    background: #fff;
+    box-shadow: 10px 0 15px 0 rgb(0 0 0 / 10%);
+  }
+  
+  .header-logo {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 99px;
+    float: left;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 20px;
+    top: 34%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 125px;
+    height: 30px;
+    background: url('../images/logo_white.png') no-repeat center;
+    background-size: contain;
+    font-size: 0;
+    transition: all 0.3s;
+  
+  }
+  
+  .logo-fix {
+    position: absolute;
+    left: 20px;
+    top: 34%;
+    transform: translateY(-50%);
+    /* position: relative; */
+    display: block;
+    width: 125px;
+    height: 30px;
+    background: url('../images/logo.png') no-repeat center;
+    background-size: contain;
+    font-size: 0;
+  }
+  
+  
+  .gnb {
+    position: relative;
+    display: none;
+    float: right;
+    height: 100%;
+  }
+  
+  
+  .mobile-header{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    cursor: pointer;
+  }
+  
+
+  .header-line-fix{
+    background-color: #000;
+  }
+
+
+
+
+
+
+  
+}
+
+
+
+
 /* 비주얼 영역 */
 .visual {
   position: relative;
@@ -738,7 +897,7 @@ body {
   display: block;
   text-align: center;
 }
-.footer-gnb li{
+.footer-gnb-list{
   position: relative;
   display: block;
   float: left;
@@ -747,7 +906,7 @@ body {
   color: #666666;
 
 }
-.footer-gnb li::after{
+.footer-gnb-list::after{
   content: "";
   display: block;
   position: absolute;
@@ -759,8 +918,8 @@ body {
   background-color: #444;
 }
 
-.footer-gnb li::after:nth-child(4){
-  background-color: red;
+.footer-gnb-list:last-child::after{
+  display: none;
 }
 
 .footer-address{
