@@ -211,9 +211,9 @@ body {
 }
 
 /* 모바일 */
-.mobile-header{
+.mobile-header-bt{
   display: none;
-  position: fixed;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 30px;
@@ -222,36 +222,21 @@ body {
   background-color: transparent;
 }
 
-
-.mobile-header::after{
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 25PX;
-  display: block;
-  width: 30px;
-  height: 2px;
-  background-color: #fff;
-  transition: background-color 0.3s;
-  transition: all 0.3s;
-}
-
 .header-line{
   display: block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative;
   width: 30px;
   height: 2px;
   background-color: #fff;
   transition: background-color .3s;
 }
 
-.mobile-header::before{
+
+.header-line::after{
   content: '';
   position: absolute;
   left: 0;
-  bottom: 25px;
+  bottom: 10px;
   display: block;
   width: 30px;
   height: 2px;
@@ -260,7 +245,22 @@ body {
   transition: all 0.3s;
 }
 
-.headeropen::before {
+
+
+.header-line::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  transition: background-color 0.3s;
+  transition: all 0.3s;
+}
+
+.headeropen .header-line::before {
   top: 50%;
   transform: rotate(45deg);
 }
@@ -269,10 +269,34 @@ body {
   width: 0;
 }
 
-.headeropen::after {
+.headeropen .header-line::after {
   top: 50%;
   transform: rotate(-45deg);
 }
+
+.mb-wrap{
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(100%);
+  background-color: #fff;
+  transition: visibility .3s, opacity .3s, transform .3s;
+  z-index: 1600;
+}
+
+.mb-wrap-open{
+  visibility: visible;
+  opacity: 1;
+  left: 0;
+  transform: translateX(0);
+  /* background-color: yellowgreen; */
+}
+
+
 
 /* 헤더 반응형 1025px 일때 */
 @media all and (max-width:1025px){
@@ -292,11 +316,18 @@ body {
   }
   
   .header-open {
+    display: block;
+    position: fixed;
     height: 70px;
     background: #fff;
     box-shadow: 10px 0 15px 0 rgb(0 0 0 / 10%);
   }
   
+  .headeropen .header-line::before,
+  .headeropen .header-line::after{
+    background-color: #000;
+  }
+
   .header-logo {
     position: absolute;
     left: 0;
@@ -334,6 +365,12 @@ body {
     font-size: 0;
   }
   
+  .mobile-logo{
+    width: 125px;
+    height: 30px;
+    background: url('../images/logo.png') no-repeat center;
+    background-size: contain;
+  }
   
   .gnb {
     position: relative;
@@ -342,8 +379,12 @@ body {
     height: 100%;
   }
   
-  
   .mobile-header{
+    background-color: #fff;
+  }
+
+
+  .mobile-header-bt{
     position: absolute;
     right: 20px;
     top: 50%;
@@ -356,15 +397,22 @@ body {
   .header-line-fix{
     background-color: #000;
   }
+  .header-line-fix::after{
+    background-color: #000;
+  }
+  .header-line-fix::before{
+    background-color: #000;
+  }
 
-
+  .header::before{
+    background-color: #000;
+  }
 
 
 
 
   
 }
-
 
 
 
@@ -402,15 +450,15 @@ body {
   transform: translateX(-50%);
   width: 100%;
   z-index: 99;
-  padding-top: 150px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .sw-visual-prev {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 60px;
+  width: 4.22vw;
+  height: 4.22vw;
   border-radius: 50%;
   border: 0;
   margin-right: 10px;
@@ -422,8 +470,8 @@ body {
 .sw-visual-next {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 60px;
+  width: 4.22vw;
+  height: 4.22vw;
   /* background-color: yellowgreen; */
   border-radius: 50%;
   border: 0;
@@ -435,7 +483,7 @@ body {
 
 .sw-icon {
   color: rgba(255, 255, 255, 0.3);
-  font-size: 30px;
+  font-size: 2.11vw;
   transition: all 0.5s;
 }
 
@@ -465,15 +513,16 @@ body {
 .visual-title {
   position: relative;
   display: block;
-  font-size: 74px;
+  font-size: 5.21vw;
+  font-weight: 700;
+  /* font-size: 5.2vw; */
   color: #fff;
-  padding-top: 150px;
 }
 
 .visual-desc {
   position: relative;
   display: block;
-  font-size: 22px;
+  font-size: 1.54vw;
   color: #fff;
   margin-top: 12px;
 }
@@ -481,15 +530,16 @@ body {
 .visual-bt {
   position: relative;
   display: block;
-  width: 220px;
+  width: 15.49vw;
   height: 65px;
   background-color: transparent;
 
-  padding: 0 45px 0 50px;
-  margin-top: 50px;
-  font-size: 17px;
+  padding: 0 3.16vw 0 3.52vw;
+  margin-top: 30px;
+  font-size: 1.19vw;
   color: #fff;
   border: 1px solid rgba(255, 255, 255, .6);
+  white-space: nowrap;
 }
 
 .vsiual-bt>i {
@@ -523,7 +573,7 @@ body {
 .sw-visual-control {
   position: absolute;
   left: 50%;
-  bottom: 30%;
+  bottom: 20%;
   transform: translateX(-50%);
   display: block;
   width: 1420px;

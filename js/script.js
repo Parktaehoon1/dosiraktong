@@ -1,8 +1,14 @@
 window.onload = function () {
-    let mobileBtn = $('.mobile-header');
+    let mobileBtn = $('.mobile-header-bt');
+    let mbWrapOpen = $('.mb-wrap')
+    let header = $('.header');
+    let headerLogoFix = $('.header-logo > .logo')
 
     mobileBtn.click(function(){
-        $(this).toggleClass('headeropen')
+        $(this).toggleClass('headeropen');
+        mbWrapOpen.toggleClass('mb-wrap-open');
+        header.toggleClass('mobile-header');
+        headerLogoFix.toggleClass('mobile-logo');
     })
 
 
