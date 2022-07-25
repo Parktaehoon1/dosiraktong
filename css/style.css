@@ -116,12 +116,14 @@ body {
   background: url('../images/logo_white.png') no-repeat center;
   background-size: contain;
   font-size: 0;
+  transition: all 0.3s;
+
 }
 
 .logo-fix {
   position: absolute;
-  left: 0px;
-  top: 50%;
+  left: 20px;
+  top: 40%;
   transform: translateY(-50%);
   /* position: relative; */
   display: block;
@@ -140,6 +142,8 @@ body {
   height: 100%;
 }
 
+
+
 .depth1 {
   position: relative;
   display: block;
@@ -151,18 +155,60 @@ body {
 .depth1 li {
   position: relative;
   display: inline-block;
-  line-height: 99px;
   text-align: center;
-}
-
-.depth1 li a {
-  position: relative;
-  display: block;
   width: 150px;
-  font-size: 17px;
-  color: #fff;
 }
 
+.mainmenu {
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+  margin: 41px 0;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.mainmenu::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.depth1 li:hover .mainmenu::after{
+  width: 100%;
+  visibility: visible;
+}
+
+.mainmenu-fix{
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+  margin: 31px 0;
+  color: #000;
+}
+
+.mainmenu-fix::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #000;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.depth1 li:hover .mainmenu-fix::after{
+  width: 100%;
+  visibility: visible;
+}
 /* 비주얼 영역 */
 .visual {
   position: relative;
@@ -677,11 +723,15 @@ body {
 .footer .inner{
   position: relative;
   display: block;
+  width: 1420px;
+  text-align: center;
 }
 
 .footer-list{
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
 }
 .footer-gnb{
   position: relative;
@@ -689,14 +739,41 @@ body {
   text-align: center;
 }
 .footer-gnb li{
+  position: relative;
+  display: block;
   float: left;
   margin: 0 15px;
+  font-size: 15px;
+  color: #666666;
+
 }
+.footer-gnb li::after{
+  content: "";
+  display: block;
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 12px;
+  background-color: #444;
+}
+
+.footer-gnb li::after:nth-child(4){
+  background-color: red;
+}
+
 .footer-address{
   position: relative;
   display: block;
+  font-size: 15px;
+  color: #666666;
+
 }
 .copy{
   position: relative;
   display: block;
+  margin-top: 50px;
+  font-size: 15px;
+  color: #666666;
 }

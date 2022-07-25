@@ -6,16 +6,18 @@ window.onload = function () {
         console.log(temp)
         let header = $('.header');
         let headerLogoFix = $('.header-logo > .logo')
-
+        let mainMenu = $('.mainmenu')
 
         if(temp > 0) {
             header.addClass('header-open');
             headerLogoFix.addClass('logo-fix');
+            mainMenu.addClass('mainmenu-fix');
         } else {
             header.removeClass('header-open');
             headerLogoFix.removeClass('logo-fix');
-
+            mainMenu.removeClass('mainmenu-fix');
         }
+
     })
 
 
