@@ -605,6 +605,7 @@ body {
   display: block;
   width: 1420px;
   z-index: 9;
+  white-space: nowrap;
 }
 
 .sw-visual-pg {
