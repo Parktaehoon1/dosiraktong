@@ -1,4 +1,5 @@
 window.onload = function () {
+    
     let mobileBtn = $('.mobile-header-bt');
     let mbWrapOpen = $('.mb-wrap')
     let header = $('.header');
@@ -15,13 +16,11 @@ window.onload = function () {
     // 스크롤 위치 이동시 
     $(window).scroll(function(){
         let temp = $(window).scrollTop();
-        console.log(temp)
         let header = $('.header');
         let headerLogoFix = $('.header-logo > .logo')
         let mainMenu = $('.mainmenu')
         let headerBtn = $('.header-line') 
-
-
+        
         if(temp > 0) {
             header.addClass('header-open');
             headerLogoFix.addClass('logo-fix');

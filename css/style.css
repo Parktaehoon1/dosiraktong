@@ -45,6 +45,7 @@ img {
 
 html {
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -289,8 +290,8 @@ body {
 }
 
 .mb-wrap-open{
-  visibility: visible;
-  opacity: 1;
+  visibility: hidden;
+  opacity: 0;
   left: 0;
   transform: translateX(0);
   /* background-color: yellowgreen; */
@@ -408,8 +409,34 @@ body {
     background-color: #000;
   }
 
+  
+  .mb-gnb{
+    height: calc(100% - 110px);
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
 
+  .mb-depth1{}
 
+  .mb-mainmenu{
+    display: flex;
+    align-items: center;
+    padding: 15px 70px 15px 40px;
+    font-size: 24px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e5e5e5;
+
+  }
+
+  .mb-wrap-open{
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+    transform: translateX(0);
+    /* background-color: yellowgreen; */
+  }
+  
 
   
 }
@@ -656,6 +683,68 @@ body {
   100% {
     width: 100%;
   }
+}
+
+@media all and (max-width:1025px){
+  .swiper-control {
+    position: absolute;
+    top: calc(80px + 38px);
+    display: block;
+    max-width: 1420px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 99;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding: 0 20px;
+  }
+
+  .visual-title {
+    position: relative;
+    display: block;
+    font-size: 5.21vw;
+    font-weight: 700;
+    /* font-size: 5.2vw; */
+    color: #fff;
+    padding: 0 20px;
+
+  }
+  
+  .visual-desc {
+    position: relative;
+    display: block;
+    font-size: 1.54vw;
+    color: #fff;
+    margin-top: 12px;
+    padding: 0 20px;
+
+  }
+
+  .visual-bt {
+    position: relative;
+    display: block;
+    width: 25vw;
+    height: 65px;
+    background-color: transparent;
+  
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 1.19vw;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .6);
+    white-space: nowrap;
+  }
+
+  .sw-visual-control {
+    position: relative;
+    display: block;
+    width: 100%;
+    z-index: 9;
+    padding: 0 20px;
+
+  }
+  
 }
 
 
