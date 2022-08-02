@@ -90,6 +90,7 @@ body {
 
   z-index: 999;  
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .gotop-show{
@@ -1088,7 +1089,7 @@ i{
 }
 
 .sw-wrap{
-  transform: translate3d(0,0,0) !important;
+  transform: translate3d(0,0,0);
 }
 
 .more-left{

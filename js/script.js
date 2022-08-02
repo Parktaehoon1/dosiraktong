@@ -14,7 +14,6 @@ window.onload = function () {
     }
     scrollHandler()
 
-
     // gotop 눌렀을 때 최상단으로 가는거
     go_top.click(function(){
         $('html').animate({scrollTop:0
@@ -46,11 +45,18 @@ window.onload = function () {
 
     // 스크롤 위치 이동시 
     $(window).scroll(function () {
+        // more 슬라이드 쪽 1번쨰 슬라이드 안나오는거 해결하는코드
+        // 버벅거림있음
+        let swWrap = $('.sw-wrap');
+        swWrap.removeAttr('style');
+
+
         let temp = $(window).scrollTop();
         let header = $('.header');
         let headerLogoFix = $('.header-logo > .logo')
         let mainMenu = $('.mainmenu')
         let headerBtn = $('.header-line')
+        let go_top = $('.gotop')
 
         if (temp > 0) {
             header.addClass('header-open');
@@ -62,6 +68,13 @@ window.onload = function () {
             headerLogoFix.removeClass('logo-fix');
             mainMenu.removeClass('mainmenu-fix');
             headerBtn.removeClass('header-line-fix')
+        }
+
+        if(temp > 570){
+            go_top.addClass('gotop-show')
+        } else {
+            go_top.removeClass('gotop-show')
+
         }
     })
 
@@ -107,7 +120,7 @@ window.onload = function () {
 		},
     });
 
-	$(".more-dim").on("mouseup", function (){
+	$(".more-dim").on("click", function (){
 		$(this).hide();
 	})
 }
