@@ -48,7 +48,7 @@ window.onload = function () {
         // more 슬라이드 쪽 1번쨰 슬라이드 안나오는거 해결하는코드
         // 버벅거림있음
         let swWrap = $('.sw-wrap');
-        swWrap.removeAttr('style');
+        // swWrap.removeAttr('style');
 
 
         let temp = $(window).scrollTop();

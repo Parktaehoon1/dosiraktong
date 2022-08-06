@@ -1159,7 +1159,7 @@ i{
 
 .more-dim{
   display: none;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
 
