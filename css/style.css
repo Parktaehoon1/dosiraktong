@@ -1014,8 +1014,31 @@ i{
     margin: 0 auto;
     margin-top: 20px;
   }
+  .service-desc {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  .service-desc h4 {
+    margin-bottom: 3px;
+    /* font-size: 26px; */
+    font-size: 2.1667vw;
+    font-weight: 500;
+    color: #fff;
   
-
+  }
+  
+  .service-desc p {
+    font-weight: 300;
+    /* font-size: 17px; */
+    font-size: 1.4167vw;
+    opacity: .8;
+    color: #fff;
+  }
+  
 }
 
 
