@@ -96,10 +96,25 @@ body {
 	padding: 20px 0;
 }
 
-.modal-main p {
+
+.modal-desc {
   position: absolute;
   left: 50%;
   top: 50%;
+  display: block;
+  width: 100%;
+  transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 16px;
+	font-weight: 300;
+	color: #111;
+	line-height: 1.8;
+}
+
+.modal-chrome{
+  position: absolute;
+  left: 50%;
+  top: 65%;
   display: block;
   width: 100%;
   transform: translate(-50%, -50%);
@@ -137,22 +152,35 @@ body {
 
 .modal-close {
 	position: absolute;
-	right: 20px;
-	top: 20px;
-	border: 0;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  display: block;
+  width: 200px;
+  padding: 5px 10px;
+	border: 1px solid #000;
 	cursor: pointer;
 	font-size: 25px;
 	background: transparent;
-	color: #999;
-	transition: transform 0.5s;
+	color: #000;
+  border-radius: 5px;
+	/* transition: transform 0.5s; */
 }
 
-.modal-close:hover {
+/* .modal-close:hover {
 	transform: rotate(180deg);
-}
+} */
 
-.fas{
-  color: #333;
+.modal-warning{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  color: red;
+  opacity: 0.3;
+  z-index: -9;
 }
 
 /* 공통요소 */
