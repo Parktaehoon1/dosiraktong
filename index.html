@@ -1,322 +1,389 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <link
+      rel="shortcut icon"
+      href="https://d01.wifidosirak.com/tong/images/common/favicon.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="images/apple-touch-icon.png"
+    />
+    <title>도시락으로 다 통한다, 해외 데이터는 도시락통</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="format-detection" content="telephone=no">
-  <link rel="shortcut icon" href="https://d01.wifidosirak.com/tong/images/common/favicon.png">  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
-  <title>도시락으로 다 통한다, 해외 데이터는 도시락통</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta
+      name="description"
+      content="도시락으로 다 통한다, 해외 데이터는 도시락통! 와이파이도시락, 도시락유심, 도시락eSIM을모두 담은 도시락통"
+    />
+    <meta
+      name="keywords"
+      content="도시락으로 다 통한다, 해외 데이터는 도시락통! 와이파이도시락, 도시락유심, 도시락eSIM을모두 담은 도시락통"
+    />
+    <meta name="author" content="" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="도시락으로 다 통한다,해외 데이터는 도시락통"
+    />
+    <meta
+      property="og:site_name"
+      content="도시락으로 다 통한다, 해외 데이터는 도시락통"
+    />
+    <meta
+      property="og:description"
+      content="도시락으로 다 통한다, 해외 데이터는 도시락통! 와이파이도시락, 도시락유심, 도시락eSIM을모두 담은 도시락통"
+    />
+    <meta
+      property="og:image"
+      content="https://d01.wifidosirak.com/tong/images/common/dosiraktong.png"
+    />
+    <meta property="og:url" content="https://www.dosiraktong.com" />
+    <link rel="canonical" href="https://www.dosiraktong.com" />
 
-  <meta name="description" content="도시락으로 다 통한다, 해외 데이터는 도시락통! 와이파이도시락, 도시락유심, 도시락eSIM을모두 담은 도시락통" />
-  <meta name="keywords" content="도시락으로 다 통한다, 해외 데이터는 도시락통! 와이파이도시락, 도시락유심, 도시락eSIM을모두 담은 도시락통" />
-  <meta name="author" content="" />
-  <meta property="og:type" content="website" />
-	<meta property="og:title" content="도시락으로 다 통한다,해외 데이터는 도시락통">
-	<meta property="og:site_name" content="도시락으로 다 통한다, 해외 데이터는 도시락통" />
-	<meta property="og:description" content="도시락으로 다 통한다, 해외 데이터는 도시락통! 와이파이도시락, 도시락유심, 도시락eSIM을모두 담은 도시락통">
-	<meta property="og:image" content="https://d01.wifidosirak.com/tong/images/common/dosiraktong.png">
-	<meta property="og:url"content="https://www.dosiraktong.com" />
-	<link rel="canonical"href="https://www.dosiraktong.com">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
+      integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <link rel="stylesheet" href="css/reset.css">
-  <link
-    href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
-    integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 딩벳폰트 참조 -->
+    <link rel="stylesheet" href="css/fontello/css/animation.css" />
+    <link rel="stylesheet" href="css/fontello/css/fontello.css" />
 
-  <!-- 딩벳폰트 참조 -->
-  <link rel="stylesheet" href="css/fontello/css/animation.css">
-  <link rel="stylesheet" href="css/fontello/css/fontello.css">
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="js/swiper/swiper.min.css" />
+    <script
+      src="https://kit.fontawesome.com/429f5509fa.js"
+      crossorigin="anonymous"
+    ></script>
 
+    <script src="js/swiper/swiper.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+  </head>
 
-  <!--[if lt IE 9]> 
-    <script src="js/html5shiv.js"></script>
-  <![endif]-->
-  <script src="js/prefixfree.min.js"></script>
-  <script src="js/respond.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <link rel="stylesheet" href="js/swiper/swiper.min.css">
-  <script src="https://kit.fontawesome.com/429f5509fa.js" crossorigin="anonymous"></script>
+  <body>
+    <!-- 모달창 -->
+    <div class="modal-wrap">
+      <div class="modal-main">
+        <div class="modal-up">
+          <span class="btn1"></span>
+          <span class="btn2"></span>
+          <span class="btn3"></span>
+        </div>
+        <div class="modal-bottom">
+          <h1>도시락통 클론코딩</h1>
+          <p class="modal-desc">
+            이 사이트는 <span class="checkfont">스터디용</span>으로 제작되었으며
+            리소스는 <span class="checkfont">원저작자</span>에게 있습니다.
+            <br />
+            해당 사이트 관련 문제 사항이 있으시면 연락해주시면 삭제하겠습니다.
+          </p>
 
-  <script src="js/swiper/swiper.min.js"></script>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
-</head>
+          <p class="modal-study">
+            1. 반응형 시 이미지 크기 짤리지 않도록 제작하였습니다.<br />
+            2. 메타 태그를 통한 검색엔진 최적화 진행하였습니다.
+          </p>
 
-<body>
-  	<!-- 모달창 -->
-	<div class="modal-wrap">
-		<div class="modal-main">
-      <img src="images/warning.png" alt="경고아이콘" class="modal-warning">
-			<h1>도시락통 클론코딩</h1>
-			<p class="modal-desc">
-				이 사이트는 <span class="checkfont">스터디용</span>으로 제작되었으며 리소스는 <span class="checkfont">원저작자</span>에게 있습니다. <br>
-				해당 사이트 관련 문제 사항이 있으시면 연락해주시면 삭제하겠습니다.
-
-      </p>
-
-      <p class="modal-chrome">본 사이트는 <span class="checkfont">Chrome</span> 에 최적화되어 있습니다.</p>
-			<button class="modal-close">
-				<!-- <i class="fas fa-times"></i> -->
-        CLOSE
-			</button>
-		</div>
-	</div>
-
-
-
-  <!-- goTop -->
-  <button class="gotop">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
-
-  <!-- 모바일 박스영역 -->
-  <div class="mb-wrap">
-    <div class="mb-inner">
-      <div class="mb-gnb">
-        <ul class="mb-depth1">
-          <li><a href="#" class="mb-mainmenu">ABOUT US</a></li>
-          <li><a href="#" class="mb-mainmenu">제휴문의</a></li>
-          <li><a href="#" class="mb-mainmenu">도시락멤버스</a></li>
-          <li><a href="#" class="mb-mainmenu">와이파이도시락</a></li>
-          <li><a href="#" class="mb-mainmenu">도시락유심</a></li>
-          <li><a href="#" class="mb-mainmenu">도시락eSIM</a></li>
-        </ul>
+          <p class="modal-chrome">
+            본 사이트는 <span class="checkfont">Chrome</span> 에 최적화되어
+            있습니다.😊
+          </p>
+          <button class="modal-close">
+            <!-- <i class="fas fa-times"></i> -->
+            CLOSE
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- 전체메뉴 -->
-  <div class="wrap">
-    <!-- 헤더영역 -->
-    <header class="header clearfix">
-      <div class="header-logo">
-        <a href="#" class="logo">LOGO</a>
-      </div>
+    <!-- goTop -->
+    <button class="gotop">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
-      <nav class="gnb">
-        <ul class="depth1">
-          <li><a href="#" class="mainmenu">ABOUT US</a></li>
-          <li><a href="#" class="mainmenu">제휴문의</a></li>
-          <li><a href="#" class="mainmenu">도시락멤버스</a></li>
-          <li><a href="#" class="mainmenu">와이파이도시락</a></li>
-          <li><a href="#" class="mainmenu">도시락유심</a></li>
-          <li><a href="#" class="mainmenu">도시락eSIM</a></li>
-        </ul>
-      </nav>
-      <!-- 모바일 버튼영역 -->
-      <button class="mobile-header-bt">
-        <span class="header-line"></span>
-      </button>
-
-    </header>
-    <!-- 비주얼 영역 -->
-    <section class="visual">
-      <div class="inner">
-        <div class="swiper-container sw-visual">
-
-          <div class="swiper-control clearfix">
-            <button class="sw-visual-prev">
-              <i class="fa-solid fa-angle-left sw-icon"></i>
-            </button>
-            <button class="sw-visual-next">
-              <i class="fa-solid fa-angle-right sw-icon"></i>
-            </button>
-          </div>
-
-          <div class="swiper-wrapper sw-visual-wrap">
-            <div class="swiper-slide">
-              <a href="#" class="visual-1 visualbox">
-                <div class="visual-contents inner">
-                  <h2 class="visual-title">도시락통</h2>
-                  <p class="visual-desc">도시락으로 다 통한다, 해외데이터는 도시락통</p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#" class="visual-2 visualbox">
-                <div class="visual-contents inner">
-                  <h2 class="visual-title">와이파이도시락</h2>
-                  <p class="visual-desc">여럿이 함께 쓰는 대용량 데이터, 장거리, 장기 할인은 기본
-                  </p>
-                  <button class="visual-bt">자세히 보기
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#" class="visual-3 visualbox">
-                <div class="visual-contents inner">
-                  <h2 class="visual-title">도시락유심</h2>
-                  <p class="visual-desc">믿을 수 있는 현지 통신사의 선불유심, 유심도 도시락으로!
-
-                  </p>
-                  <button class="visual-bt">자세히 보기
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#" class="visual-4 visualbox">
-                <div class="visual-contents inner">
-                  <h2 class="visual-title">도시락eSIM</h2>
-                  <p class="visual-desc">요금제, 통신사 변경 없이 데이터 충전가능한 아이폰유저를 위한 가장 간편한 로밍
-
-                  </p>
-                  <button class="visual-bt">자세히 보기
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="sw-visual-control">
-            <div class="swiper-pagination sw-visual-pg"></div>
-          </div>
-
-
-        </div>
-      </div>
-    </section>
-    <!-- 서비스 영억 -->
-    <section class="service">
-      <div class="inner">
-        <h2 class="service-title"><span class="service-title-color godo">도시락통</span> 서비스 만들기</h2>
-        <div class="service-wrap clearfix">
-          <div class="service-right">
-            <img src="images/main_service_img1.jpg" alt="" class="service-right-img">
-            <a href="#" class="service-desc">
-              <h4>와이파이도시락</h4>
-              <p>최대 5대 동시접속, 대용량 데이터로 해외에서도 빵빵</p>
-              <button>바로가기</button>
-            </a>
-          </div>
-          <div class="service-left">
-            <div class="service-usim">
-              <img src="images/main_service_img2.jpg" alt="" class="service-usim-img">
-              <a href="#" class="service-desc">
-                <h4>와이파이도시락</h4>
-                <p>최대 5대 동시접속, 대용량 데이터로 해외에서도 빵빵</p>
-                <button>바로가기</button>
-              </a>
-            </div>
-            <div class="service-esim">
-              <img src="images/main_service_img3.jpg" alt="" class="service-esim-img">
-              <a href="#" class="service-desc">
-                <h4>와이파이도시락</h4>
-                <p>최대 5대 동시접속, 대용량 데이터로 해외에서도 빵빵</p>
-                <button>바로가기</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- 어바웃 영역 -->
-    <section class="about">
-      <div class="inner clearfix">
-        <div class="about-left">
-          <h2>
-            통신 서비스를 하나로<br>
-            해외여행 갈 땐 <span class="godo about-title-color">도시락통</span>
-          </h2>
-        </div>
-        <div class="about-right">
-          <div class="about-right-title">
-            혼자서 갑자기 훌쩍 떠나는 여행도<br>
-            오랜만에 온 가족이 함께하는 여행도<br>
-            <span class="about-title-color">도시락 하나면 든든</span>해요.
-          </div>
-          <div class="about-right-desc">
-            <p>국내외 어디서나 끊김없이 든든한 네트워크 제공하자는 모토를 가지고 2004년,<br>
-              (주)와이드모바일은 설립되었습니다.</p>
-
-            <p>더 나은 서비스 제공을 위해 지속적으로 연구, 개발하여 앞으로도 편리하고 즐거운 여행의 파트너가
-              되겠습니다.</p>
-          </div>
-          <a href="#" class="about-right-bt">about us <i class="icon-right"></i></a>
-        </div>
-
-      </div>
-    </section>
-    <!-- 모어 영역 -->
-    <section class="more">
-      <div class="swiper-container sw-more">
-        <div class="swiper-wrapper sw-wrap">
-          <div class="swiper-slide">
-            <div class="more-left">
-              <h2 class="more-title">도시락 멤버스</h2>
-              <p class="more-desc">
-                하나의 ID로 도시락통의 모든 서비스를<br> 
-                이용할 수 있는 통합멤버십.<br> 
-                이용 할 수록 커지는 커지는 혜택을 확인해보세요!
-              </p>
-              <a href="#" class="more-bt">read more</a>
-            </div>
-
-          </div>
-          <div class="swiper-slide">
-            <div class="more-center">
-              <h2 class="more-title">도시락톡</h2>
-              <p class="more-desc">
-                로밍전화 요금 부담을 확 낮춰주는 <br> 
-                해외로밍전화 앱 서비스. <br> 
-                도시락톡끼리는 365일 무료통화 혜택까지!
-              </p>
-              <a href="#" class="more-bt">read more</a>
-            </div>
-
-          </div>
-          <div class="swiper-slide">
-            <div class="more-right">
-              <h2 class="more-title">여행보험도시락</h2>
-              <p class="more-desc">
-                방문국가, 나이 입력하고 보험료 미리보기 <br> 
-                커피 두 세잔 값으로 보험료는 가볍게, <br> 
-                보장은 든든하게!
-              </p>
-              <a href="#" class="more-bt">read more</a>
-            </div>
-
-          </div>
-        </div>
-        <div class="more-dim">
-          <div class="more-dim-btn">
-            <img src="images/scroll_guide2.png" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- 푸터 영역 -->
-    <footer class="footer">
-      <div class="inner">
-        <div class="footer-list">
-          <ul class="footer-gnb clearfix">
-            <li class="footer-gnb-list">상호 : ㈜와이드모바일</li>
-            <li class="footer-gnb-list">대표 : 김만중</li>
-            <li class="footer-gnb-list">통신판매업신고번호 : 제2018-서울서대문-0301호</li>
-            <li class="footer-gnb-list">사업자등록번호 : 121-81-66458</li>
+    <!-- 모바일 박스영역 -->
+    <div class="mb-wrap">
+      <div class="mb-inner">
+        <div class="mb-gnb">
+          <ul class="mb-depth1">
+            <li><a href="#" class="mb-mainmenu">ABOUT US</a></li>
+            <li><a href="#" class="mb-mainmenu">제휴문의</a></li>
+            <li><a href="#" class="mb-mainmenu">도시락멤버스</a></li>
+            <li><a href="#" class="mb-mainmenu">와이파이도시락</a></li>
+            <li><a href="#" class="mb-mainmenu">도시락유심</a></li>
+            <li><a href="#" class="mb-mainmenu">도시락eSIM</a></li>
           </ul>
         </div>
-        <div class="footer-address">
-          고객센터 : 1566-9070 (운영시간 9:00~18:00, 주말/공휴일/점심 12:00~13:00 제외)
-        </div>
-        <div class="copy">
-          Copyright &copy; WIDEMOBILE INC. Allright Reserved.
-        </div>
       </div>
-    </footer>
-  </div>
+    </div>
 
+    <!-- 전체메뉴 -->
+    <div class="wrap">
+      <!-- 헤더영역 -->
+      <header class="header clearfix">
+        <div class="header-logo">
+          <a href="#" class="logo">LOGO</a>
+        </div>
 
-</body>
+        <nav class="gnb">
+          <ul class="depth1">
+            <li><a href="#" class="mainmenu">ABOUT US</a></li>
+            <li><a href="#" class="mainmenu">제휴문의</a></li>
+            <li><a href="#" class="mainmenu">도시락멤버스</a></li>
+            <li><a href="#" class="mainmenu">와이파이도시락</a></li>
+            <li><a href="#" class="mainmenu">도시락유심</a></li>
+            <li><a href="#" class="mainmenu">도시락eSIM</a></li>
+          </ul>
+        </nav>
+        <!-- 모바일 버튼영역 -->
+        <button class="mobile-header-bt">
+          <span class="header-line"></span>
+        </button>
+      </header>
+      <!-- 비주얼 영역 -->
+      <section class="visual">
+        <div class="inner">
+          <div class="swiper-container sw-visual">
+            <div class="swiper-control clearfix">
+              <button class="sw-visual-prev">
+                <i class="fa-solid fa-angle-left sw-icon"></i>
+              </button>
+              <button class="sw-visual-next">
+                <i class="fa-solid fa-angle-right sw-icon"></i>
+              </button>
+            </div>
 
+            <div class="swiper-wrapper sw-visual-wrap">
+              <div class="swiper-slide">
+                <a href="#" class="visual-1 visualbox">
+                  <div class="visual-contents inner">
+                    <h2 class="visual-title">도시락통</h2>
+                    <p class="visual-desc">
+                      도시락으로 다 통한다, 해외데이터는 도시락통
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="visual-2 visualbox">
+                  <div class="visual-contents inner">
+                    <h2 class="visual-title">와이파이도시락</h2>
+                    <p class="visual-desc">
+                      여럿이 함께 쓰는 대용량 데이터, 장거리, 장기 할인은 기본
+                    </p>
+                    <button class="visual-bt">
+                      자세히 보기
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="visual-3 visualbox">
+                  <div class="visual-contents inner">
+                    <h2 class="visual-title">도시락유심</h2>
+                    <p class="visual-desc">
+                      믿을 수 있는 현지 통신사의 선불유심, 유심도 도시락으로!
+                    </p>
+                    <button class="visual-bt">
+                      자세히 보기
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="visual-4 visualbox">
+                  <div class="visual-contents inner">
+                    <h2 class="visual-title">도시락eSIM</h2>
+                    <p class="visual-desc">
+                      요금제, 통신사 변경 없이 데이터 충전가능한 아이폰유저를
+                      위한 가장 간편한 로밍
+                    </p>
+                    <button class="visual-bt">
+                      자세히 보기
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="sw-visual-control">
+              <div class="swiper-pagination sw-visual-pg"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 서비스 영억 -->
+      <section class="service">
+        <div class="inner">
+          <h2 class="service-title">
+            <span class="service-title-color godo">도시락통</span> 서비스 만들기
+          </h2>
+          <div class="service-wrap clearfix">
+            <div class="service-right">
+              <img
+                src="images/main_service_img1.jpg"
+                alt="서비스이미지1"
+                class="service-right-img"
+              />
+              <a href="#" class="service-desc">
+                <h4>와이파이도시락</h4>
+                <p>최대 5대 동시접속, 대용량 데이터로 해외에서도 빵빵</p>
+                <button>바로가기</button>
+              </a>
+            </div>
+            <div class="service-left">
+              <div class="service-usim">
+                <img
+                  src="images/main_service_img2.jpg"
+                  alt="서비스이미지2"
+                  class="service-usim-img"
+                />
+                <a href="#" class="service-desc">
+                  <h4>와이파이도시락</h4>
+                  <p>최대 5대 동시접속, 대용량 데이터로 해외에서도 빵빵</p>
+                  <button>바로가기</button>
+                </a>
+              </div>
+              <div class="service-esim">
+                <img
+                  src="images/main_service_img3.jpg"
+                  alt="서비스이미지3"
+                  class="service-esim-img"
+                />
+                <a href="#" class="service-desc">
+                  <h4>와이파이도시락</h4>
+                  <p>최대 5대 동시접속, 대용량 데이터로 해외에서도 빵빵</p>
+                  <button>바로가기</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 어바웃 영역 -->
+      <section class="about">
+        <div class="inner clearfix">
+          <div class="about-left">
+            <h2>
+              통신 서비스를 하나로<br />
+              해외여행 갈 땐
+              <span class="godo about-title-color">도시락통</span>
+            </h2>
+          </div>
+          <div class="about-right">
+            <div class="about-right-title">
+              혼자서 갑자기 훌쩍 떠나는 여행도<br />
+              오랜만에 온 가족이 함께하는 여행도<br />
+              <span class="about-title-color">도시락 하나면 든든</span>해요.
+            </div>
+            <div class="about-right-desc">
+              <p>
+                국내외 어디서나 끊김없이 든든한 네트워크 제공하자는 모토를
+                가지고 2004년,<br />
+                (주)와이드모바일은 설립되었습니다.
+              </p>
+
+              <p>
+                더 나은 서비스 제공을 위해 지속적으로 연구, 개발하여 앞으로도
+                편리하고 즐거운 여행의 파트너가 되겠습니다.
+              </p>
+            </div>
+            <a href="#" class="about-right-bt"
+              >about us <i class="icon-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <!-- 모어 영역 -->
+      <section class="more">
+        <div class="swiper-container sw-more">
+          <div class="swiper-wrapper sw-wrap">
+            <div class="swiper-slide">
+              <div class="more-left">
+                <h2 class="more-title">도시락 멤버스</h2>
+                <p class="more-desc">
+                  하나의 ID로 도시락통의 모든 서비스를<br />
+                  이용할 수 있는 통합멤버십.<br />
+                  이용 할 수록 커지는 커지는 혜택을 확인해보세요!
+                </p>
+                <a href="#" class="more-bt">read more</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="more-center">
+                <h2 class="more-title">도시락톡</h2>
+                <p class="more-desc">
+                  로밍전화 요금 부담을 확 낮춰주는 <br />
+                  해외로밍전화 앱 서비스. <br />
+                  도시락톡끼리는 365일 무료통화 혜택까지!
+                </p>
+                <a href="#" class="more-bt">read more</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="more-right">
+                <h2 class="more-title">여행보험도시락</h2>
+                <p class="more-desc">
+                  방문국가, 나이 입력하고 보험료 미리보기 <br />
+                  커피 두 세잔 값으로 보험료는 가볍게, <br />
+                  보장은 든든하게!
+                </p>
+                <a href="#" class="more-bt">read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="more-dim">
+            <div class="more-dim-btn">
+              <img src="images/scroll_guide2.png" alt="스크롤 이미지" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 푸터 영역 -->
+      <footer class="footer">
+        <div class="inner">
+          <div class="footer-list">
+            <ul class="footer-gnb clearfix">
+              <li class="footer-gnb-list">상호 : ㈜와이드모바일</li>
+              <li class="footer-gnb-list">대표 : 김만중</li>
+              <li class="footer-gnb-list">
+                통신판매업신고번호 : 제2018-서울서대문-0301호
+              </li>
+              <li class="footer-gnb-list">사업자등록번호 : 121-81-66458</li>
+            </ul>
+          </div>
+          <div class="footer-address">
+            고객센터 : 1566-9070 (운영시간 9:00~18:00, 주말/공휴일/점심
+            12:00~13:00 제외)
+          </div>
+          <div class="copy">
+            Copyright &copy; WIDEMOBILE INC. Allright Reserved.
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
