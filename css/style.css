@@ -112,7 +112,8 @@ body {
   height: 400px;
   background-color: #fff;
   border-radius: 10px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", GmarketSansMedium, GmarketSansLight, GmarketSansBold,
+    "맑은 고딕", "돋움", Dotum, "굴림", Gulim, Sans-serif;
 }
 
 .modal-up {
